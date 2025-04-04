@@ -1,32 +1,322 @@
-# Prerequisites
-*.d
+#include <iostream>
+using namespace std;
+//TASK1
+//class Human {
+//private:
+//	char* _Name;
+//	char* _Surname;
+//	char* _Fathername;
+//	char* _Address;
+//	char* _Email;
+//	int   _Birthyear;
+//	int   _Schoolnum;
+//public:
+//	Human() {
+//		_Name = nullptr;
+//		_Surname = nullptr;
+//		_Fathername = nullptr;
+//		_Address = nullptr;
+//		_Email = nullptr;
+//		_Birthyear = 0;
+//		_Schoolnum = 0;
+//	}
+//	Human(const char* n, const char* s, const char* f, const char* a, const char* e, const int& b, const int& sn) {
+//		SetName(n);
+//		SetSurname(s);
+//		SetFathername(f);
+//		SetAddress(a);
+//		SetEmail(e);
+//		SetBirthyear(1999);
+//		SetSchoolnum(13);
+//	}
+//	char* GetName() {
+//		return _Name;
+//	}
+//	char* GetSurname() {
+//		return _Surname;
+//	}
+//	char* GetFathername() {
+//		return _Fathername;
+//	}
+//	char* GetAddress() {
+//		return _Address;
+//	}
+//	char* GetEmail() {
+//		return _Email;
+//	}
+//	int GetBirthyear() {
+//		return _Birthyear;
+//	}
+//	int GetSchoolnum() {
+//		return _Schoolnum;
+//	}
+//	void SetName(const char* n) {
+//		if (n != nullptr) {
+//			int l = strlen(n);
+//			_Name = new char[l + 1] {};
+//			strcpy_s(_Name, l + 1, n);
+//		}
+//		else {
+//			cout << "name cannot be empty" << endl;
+//		}
+//
+//	}
+//	void SetSurname(const char* s) {
+//		if (s != nullptr) {
+//			int l = strlen(s);
+//			_Surname = new char[l + 1] {};
+//			strcpy_s(_Surname, l + 1, s);
+//		}
+//		else {
+//			cout << "surname cannot be empty" << endl;
+//		}
+//
+//	}
+//	void SetFathername(const char* f) {
+//		if (f != nullptr) {
+//			int l = strlen(f);
+//			_Fathername = new char[l + 1] {};
+//			strcpy_s(_Name, l + 1, f);
+//		}
+//		else {
+//			cout << "Fathername cannot be empty" << endl;
+//		}
+//
+//	}
+//	void SetAddress(const char* a) {
+//		if (a != nullptr) {
+//			int l = strlen(a);
+//			_Address = new char[l + 1] {};
+//			strcpy_s(_Address, l + 1, a);
+//		}
+//		else {
+//			cout << "Address cannot be empty" << endl;
+//		}
+//
+//	}
+//	void SetEmail(const char* e) {
+//		if (e != nullptr) {
+//			int l = strlen(e);
+//			_Email = new char[l + 1] {};
+//			strcpy_s(_Email, l + 1, e);
+//		}
+//		else {
+//			cout << "Address cannot be empty" << endl;
+//		}
+//
+//	}
+//	void SetBirthyear(const int& y) {
+//		if (y > 1900) {
+//			_Birthyear = y;
+//		}
+//		else {
+//			cout << "Birthyear should be greater than 1900!!!!!!" << endl;
+//		}
+//	}
+//	void SetSchoolnum(const int& sn) {
+//		if (sn > 0) {
+//			_Schoolnum = sn;
+//		}
+//		else {
+//			cout << "Schoolnum should be greater than 0!!!!!!" << endl;
+//		}
+//	}
+//	void ShowHuman() {
+//		cout << "Human info" << endl;
+//		if (_Name != nullptr) {
+//			cout << "Name:" << GetName() << endl;
+//		}
+//		if (_Surname != nullptr) {
+//			cout << "Surname:" << GetSurname() << endl;
+//		}
+//		if (_Fathername != nullptr) {
+//			cout << "fATHERNAME:" << GetFathername() << endl;
+//		}
+//		if (_Address != nullptr) {
+//			cout << "Address:" << GetAddress() << endl;
+//		}
+//		if (_Email != nullptr) {
+//			cout << "Email:" << GetEmail() << endl;
+//		}
+//		cout << "Birthyear:" << GetBirthyear() << endl;
+//		cout << "school number:" << GetSchoolnum() << endl;
+//	}
+//
+//	~Human() {
+//		delete[]_Name;
+//		_Name = nullptr;
+//		delete[]_Surname;
+//		_Surname = nullptr;
+//		delete[]_Fathername;
+//		_Fathername = nullptr;
+//		delete[]_Address;
+//		_Address = nullptr;
+//		delete[]_Email;
+//		_Email = nullptr;
+//
+//	}
+//};
+//
+//void main() {
+//	Human admin1("Huseyn", "Shixalizada", "Murad", "Bakı", "hsixelizade2009@gmail.com", 2009, 16);
+//	admin1.ShowHuman();	
+//	cout << "_____________________________" << endl;
+//	Human admin2("Abbasali", "Shixalizada", "Mahir", "Bakı", "Asixelizade2010@gmail.com", 2010, 15);
+//	admin2.ShowHuman();
+//	cout << "_____________________________" << endl;
+//	Human admin3("Alimehdi", "Babalı", "Vüqar", "Yasamal", "AliBabali2010@gmail.com", 2010, 15);
+//	admin3.ShowHuman();
+//	cout << "_____________________________" << endl;
+//	Human admin4("Ömər", "Əliyev", "İsrafil", "Sumqayit", "Aliyev20010@gmail.com", 2010, 15);
+//	admin4.ShowHuman();
+//	cout << "_____________________________" << endl;
+//	Human admin5("Nurlan", "Shirinov", "Bilmirəm", "Qaraçuxur", "Mellim1998@gmail.com", 1998, 27);
+//	admin5.ShowHuman();
+//	cout << "_____________________________" << endl;
+//}
+//
+//
+//
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
 
-# Precompiled Headers
-*.gch
-*.pch
+//TASK2
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+//_______________________________________________//
+//class Product {
+//private:
+//	char* _ProductName;
+//	char* _Quantity;
+//	char* _Price;
+//	char* _ProdDate;
+//	char* _ExpDate;
+//public:
+//	Product() {
+//		_ProductName = nullptr;
+//		_Quantity = nullptr;
+//		_Price = nullptr;
+//		_ProdDate = nullptr;
+//		_ExpDate = nullptr;
+//	}
+//	Product(const char* n, const char* q, const char* p, const char* pd, const char* ed) {
+//		SetProductName(n);
+//		SetQuantity(q);
+//		SetPrice(p);
+//		SetProdDate(pd);
+//		SetExpDate(ed);
+//	}
+//	char* GetProductName() {
+//		return _ProductName;
+//	}
+//	char* GetQuantity() {
+//		return _Quantity;
+//	}
+//	char* GetPrice() {
+//		return _Price;
+//	}
+//	char* GetProdDate() {
+//		return _ProdDate;
+//	}
+//	char* GetExpDate() {
+//		return _ExpDate;
+//	}
+//	void SetProductName(const char* n) {
+//		if (n != nullptr) {
+//			int l = strlen(n);
+//			_ProductName = new char[l + 1] {};
+//			strcpy_s(_ProductName, l + 1, n);
+//		}
+//		else {
+//			cout << "Product name cannot be empty" << endl;
+//		}
+//	}
+//	void SetQuantity(const char* q) {
+//		if (q != nullptr) {
+//			int l = strlen(q);
+//			_Quantity = new char[l + 1] {};
+//			strcpy_s(_Quantity, l + 1, q);
+//		}
+//		else {
+//			cout << "Quantity cannot be empty" << endl;
+//		}
+//	}
+//	void SetPrice(const char* p) {
+//		if (p != nullptr) {
+//			int l = strlen(p);
+//			_Price = new char[l + 1] {};
+//			strcpy_s(_Price, l + 1, p);
+//		}
+//		else {
+//			cout << "Price cannot be empty" << endl;
+//		}
+//	}
+//	void SetProdDate(const char* pd) {
+//		if (pd != nullptr) {
+//			int l = strlen(pd);
+//			_ProdDate = new char[l + 1] {};
+//			strcpy_s(_ProdDate, l + 1, pd);
+//		}
+//		else {
+//			cout << "Production Date cannot be empty" << endl;
+//		}
+//	}
+//	void SetExpDate(const char* ed) {
+//		if (ed != nullptr) {
+//			int l = strlen(ed);
+//			_ExpDate = new char[l + 1] {};
+//			strcpy_s(_ExpDate, l + 1, ed);
+//		}
+//		else {
+//			cout << "Expiration Date cannot be empty" << endl;
+//		}
+//	}
+//	void ShowProduct() {
+//		cout << "Product Info" << endl;
+//		if (_ProductName != nullptr) {
+//			cout << "Name: " << GetProductName() << endl;
+//		}
+//		if (_Quantity != nullptr) {
+//			cout << "Quantity: " << GetQuantity() << endl;
+//		}
+//		if (_Price != nullptr) {
+//			cout << "Price: " << GetPrice() << endl;
+//		}
+//		if (_ProdDate != nullptr) {
+//			cout << "Production Date: " << GetProdDate() << endl;
+//		}
+//		if (_ExpDate != nullptr) {
+//			cout << "Expiration Date: " << GetExpDate() << endl;
+//		}
+//	}
+//
+//	~Product() {
+//		delete[] _ProductName;
+//		delete[] _Quantity;
+//		delete[] _Price;
+//		delete[] _ProdDate;
+//		delete[] _ExpDate;
+//
+//		_ProductName = nullptr;
+//		_Quantity = nullptr;
+//		_Price = nullptr;
+//		_ProdDate = nullptr;
+//		_ExpDate = nullptr;
+//	}
+//};
+//
+//void main() {
+//	Product p1("Kolbasa", "15", "4.5", "01.04.2025", "15.04.2025");
+//	Product p2("Qarğıdalı", "40", "1.2", "03.04.2025", "10.04.2025");
+//	Product p3("Alma", "60", "0.6", "02.04.2025", "12.04.2025");
+//	Product p4("Süd", "30", "2.5", "04.04.2025", "14.04.2025");
+//	Product p5("Pendir", "20", "3.0", "28.03.2025", "28.04.2025");
+//
+//	p1.ShowProduct();
+//	cout << "-----------------------" << endl;
+//	p2.ShowProduct();
+//	cout << "-----------------------" << endl;
+//	p3.ShowProduct();
+//	cout << "-----------------------" << endl;
+//	p4.ShowProduct();
+//	cout << "-----------------------" << endl;
+//	p5.ShowProduct();
+//}
